@@ -1,0 +1,23 @@
+[
+  {
+    "Construct": "BIM-use maturity (6 items)",
+    "N Items": 6,
+    "Cronbach \u03b1": 0.7502,
+    "McDonald \u03c9": 0.8312,
+    "Acceptable (\u03b1\u22650.60)": "Yes"
+  },
+  {
+    "Construct": "Sustainability impact (3 items)",
+    "N Items": 3,
+    "Cronbach \u03b1": 0.8634,
+    "McDonald \u03c9": 0.9238,
+    "Acceptable (\u03b1\u22650.60)": "Yes"
+  },
+  {
+    "Construct": "Circularity sub-construct (2 items)",
+    "N Items": 2,
+    "Cronbach \u03b1": 0.3658,
+    "McDonald \u03c9": 0.7646,
+    "Acceptable (\u03b1\u22650.60)": "NO"
+  }
+]

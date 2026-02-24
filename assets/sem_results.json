@@ -1,0 +1,230 @@
+{
+  "estimates": [
+    {
+      "lval": "Sust_impact",
+      "op": "~",
+      "rval": "BIM_maturity",
+      "Estimate": 0.1736,
+      "Std. Err": "0.08595463425108338",
+      "z-value": "2.0196946112672305",
+      "p-value": "0.043415074411299326"
+    },
+    {
+      "lval": "Sust_impact",
+      "op": "~",
+      "rval": "project_size_ord",
+      "Estimate": 0.4655,
+      "Std. Err": "0.42955198680352713",
+      "z-value": "1.083656177597157",
+      "p-value": "0.27851727255792547"
+    },
+    {
+      "lval": "Sust_impact",
+      "op": "~",
+      "rval": "company_size_ord",
+      "Estimate": 0.4655,
+      "Std. Err": "0.4295519868035281",
+      "z-value": "1.0836561775972111",
+      "p-value": "0.27851727255790104"
+    },
+    {
+      "lval": "bim_feasibility_study",
+      "op": "~",
+      "rval": "BIM_maturity",
+      "Estimate": 1.0,
+      "Std. Err": "-",
+      "z-value": "-",
+      "p-value": "-"
+    },
+    {
+      "lval": "bim_energy_sustainability",
+      "op": "~",
+      "rval": "BIM_maturity",
+      "Estimate": 2.0135,
+      "Std. Err": "0.2825126717909305",
+      "z-value": "7.1269707101314195",
+      "p-value": "1.0260681193585697e-12"
+    },
+    {
+      "lval": "bim_construction_mgmt",
+      "op": "~",
+      "rval": "BIM_maturity",
+      "Estimate": 2.2724,
+      "Std. Err": "0.3215729730160644",
+      "z-value": "7.066556790266511",
+      "p-value": "1.588285059028749e-12"
+    },
+    {
+      "lval": "bim_space_tracking",
+      "op": "~",
+      "rval": "BIM_maturity",
+      "Estimate": 0.9665,
+      "Std. Err": "0.1701830718674029",
+      "z-value": "5.679019783930825",
+      "p-value": "1.3546881172388225e-08"
+    },
+    {
+      "lval": "bim_demolition",
+      "op": "~",
+      "rval": "BIM_maturity",
+      "Estimate": -0.2554,
+      "Std. Err": "0.12454982166374179",
+      "z-value": "-2.0502711145268884",
+      "p-value": "0.040337981712351034"
+    },
+    {
+      "lval": "bim_recycling",
+      "op": "~",
+      "rval": "BIM_maturity",
+      "Estimate": 0.0171,
+      "Std. Err": "0.18626085229070272",
+      "z-value": "0.09188876019259717",
+      "p-value": "0.9267864217459192"
+    },
+    {
+      "lval": "sust_recycling_rate",
+      "op": "~",
+      "rval": "Sust_impact",
+      "Estimate": 1.0,
+      "Std. Err": "-",
+      "z-value": "-",
+      "p-value": "-"
+    },
+    {
+      "lval": "sust_waste_reduction",
+      "op": "~",
+      "rval": "Sust_impact",
+      "Estimate": 0.8267,
+      "Std. Err": "0.07351176186143309",
+      "z-value": "11.246306910863646",
+      "p-value": "0.0"
+    },
+    {
+      "lval": "sust_co2_reduction",
+      "op": "~",
+      "rval": "Sust_impact",
+      "Estimate": 1.0353,
+      "Std. Err": "0.047358012696867506",
+      "z-value": "21.860647666367473",
+      "p-value": "0.0"
+    },
+    {
+      "lval": "BIM_maturity",
+      "op": "~~",
+      "rval": "BIM_maturity",
+      "Estimate": 0.2614,
+      "Std. Err": "0.07669302669536904",
+      "z-value": "3.4081130998036397",
+      "p-value": "0.0006541377596553932"
+    },
+    {
+      "lval": "Sust_impact",
+      "op": "~~",
+      "rval": "Sust_impact",
+      "Estimate": 0.3428,
+      "Std. Err": "0.04020639198219488",
+      "z-value": "8.52714735959992",
+      "p-value": "0.0"
+    },
+    {
+      "lval": "bim_construction_mgmt",
+      "op": "~~",
+      "rval": "bim_construction_mgmt",
+      "Estimate": 0.0,
+      "Std. Err": "0.049644597633265605",
+      "z-value": "0.0",
+      "p-value": "1.0"
+    },
+    {
+      "lval": "bim_demolition",
+      "op": "~~",
+      "rval": "bim_demolition",
+      "Estimate": 0.7435,
+      "Std. Err": "0.07454384315356051",
+      "z-value": "9.974615912830652",
+      "p-value": "0.0"
+    },
+    {
+      "lval": "bim_energy_sustainability",
+      "op": "~~",
+      "rval": "bim_energy_sustainability",
+      "Estimate": 0.214,
+      "Std. Err": "0.044488624276608116",
+      "z-value": "4.809943952290724",
+      "p-value": "1.5097262269225808e-06"
+    },
+    {
+      "lval": "bim_feasibility_study",
+      "op": "~~",
+      "rval": "bim_feasibility_study",
+      "Estimate": 0.9712,
+      "Std. Err": "0.09784186113460226",
+      "z-value": "9.926698524264722",
+      "p-value": "0.0"
+    },
+    {
+      "lval": "bim_recycling",
+      "op": "~~",
+      "rval": "bim_recycling",
+      "Estimate": 1.8043,
+      "Std. Err": "0.180878149467332",
+      "z-value": "9.974968670365815",
+      "p-value": "0.0"
+    },
+    {
+      "lval": "bim_space_tracking",
+      "op": "~~",
+      "rval": "bim_space_tracking",
+      "Estimate": 0.5992,
+      "Std. Err": "0.060741918305238",
+      "z-value": "9.865358560619057",
+      "p-value": "0.0"
+    },
+    {
+      "lval": "sust_co2_reduction",
+      "op": "~~",
+      "rval": "sust_co2_reduction",
+      "Estimate": 0.2209,
+      "Std. Err": "0.03105862974858474",
+      "z-value": "7.113405493277588",
+      "p-value": "1.1322054405127346e-12"
+    },
+    {
+      "lval": "sust_recycling_rate",
+      "op": "~~",
+      "rval": "sust_recycling_rate",
+      "Estimate": 0.0131,
+      "Std. Err": "0.020224158725823668",
+      "z-value": "0.6466358765751856",
+      "p-value": "0.5178676328696861"
+    },
+    {
+      "lval": "sust_waste_reduction",
+      "op": "~~",
+      "rval": "sust_waste_reduction",
+      "Estimate": 0.748,
+      "Std. Err": "0.07671597880713843",
+      "z-value": "9.750837672994692",
+      "p-value": "0.0"
+    }
+  ],
+  "fit": [
+    {
+      "Unnamed: 0": "Value",
+      "DoF": 45,
+      "DoF Baseline": 57,
+      "chi2": 3057.1705,
+      "chi2 p-value": 0.0,
+      "chi2 Baseline": 4930.6638,
+      "CFI": 0.3819,
+      "GFI": 0.38,
+      "AGFI": 0.2146,
+      "NFI": 0.38,
+      "TLI": 0.2171,
+      "RMSEA": 0.5814,
+      "AIC": 11.2747,
+      "BIC": 80.4341,
+      "LogLik": 15.3627
+    }
+  ]
+}

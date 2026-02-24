@@ -1,0 +1,165 @@
+{
+  "n_rows": 199,
+  "n_cols": 18,
+  "countries": {
+    "Croatia": 99,
+    "Slovakia": 60,
+    "Slovenia": 40
+  },
+  "descriptive": {
+    "bim_feasibility_study": {
+      "count": 199.0,
+      "mean": 2.608,
+      "std": 1.113,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 3.0,
+      "75%": 3.0,
+      "max": 4.0,
+      "median": 3.0
+    },
+    "bim_energy_sustainability": {
+      "count": 199.0,
+      "mean": 2.889,
+      "std": 1.132,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 3.0,
+      "75%": 4.0,
+      "max": 5.0,
+      "median": 3.0
+    },
+    "bim_construction_mgmt": {
+      "count": 199.0,
+      "mean": 3.191,
+      "std": 1.165,
+      "min": 1.0,
+      "25%": 3.0,
+      "50%": 3.0,
+      "75%": 4.0,
+      "max": 5.0,
+      "median": 3.0
+    },
+    "bim_space_tracking": {
+      "count": 199.0,
+      "mean": 2.598,
+      "std": 0.921,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 3.0,
+      "75%": 3.0,
+      "max": 4.0,
+      "median": 3.0
+    },
+    "bim_demolition": {
+      "count": 199.0,
+      "mean": 1.804,
+      "std": 0.874,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 2.0,
+      "75%": 3.0,
+      "max": 3.0,
+      "median": 2.0
+    },
+    "bim_recycling": {
+      "count": 199.0,
+      "mean": 2.005,
+      "std": 1.347,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 1.0,
+      "75%": 4.0,
+      "max": 4.0,
+      "median": 1.0
+    },
+    "sust_recycling_rate": {
+      "count": 199.0,
+      "mean": 1.899,
+      "std": 0.948,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 2.0,
+      "75%": 2.0,
+      "max": 4.0,
+      "median": 2.0
+    },
+    "sust_waste_reduction": {
+      "count": 199.0,
+      "mean": 3.191,
+      "std": 1.165,
+      "min": 1.0,
+      "25%": 3.0,
+      "50%": 3.0,
+      "75%": 4.0,
+      "max": 5.0,
+      "median": 3.0
+    },
+    "sust_co2_reduction": {
+      "count": 199.0,
+      "mean": 2.201,
+      "std": 1.082,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 3.0,
+      "75%": 3.0,
+      "max": 4.0,
+      "median": 3.0
+    },
+    "countries_operated_in": {
+      "count": 199.0,
+      "mean": 2.683,
+      "std": 1.841,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 2.0,
+      "75%": 4.0,
+      "max": 6.0,
+      "median": 2.0
+    }
+  },
+  "categorical": {
+    "country": {
+      "Croatia": 99,
+      "Slovakia": 60,
+      "Slovenia": 40
+    },
+    "participant_status": {
+      "Contractor (main)": 139,
+      "Designer": 40,
+      "Investor": 20
+    },
+    "main_construction_activity": {
+      "41.20.2_NonResidential": 80,
+      "41.20.1_Residential": 40,
+      "Residental buildning": 40,
+      "42.11_Roads": 20,
+      "42.21_Pipelines": 19
+    },
+    "project_size": {
+      "Medium": 100,
+      "Large": 59,
+      "Small": 40
+    },
+    "company_size": {
+      "Medium": 100,
+      "Large": 59,
+      "Small": 40
+    },
+    "foreign_participation": {
+      "Yes": 159,
+      "No": 40
+    },
+    "legal_form": {
+      "Limited partnership": 100,
+      "Joint stock company": 59,
+      "A natural person \u2013 trade": 40
+    },
+    "project_type": {
+      "Hotels and buildings for congresses and exhibitions": 80,
+      "Construction of residential buildings (residences)": 80,
+      "Construction of roads and highways": 20,
+      "Construction of civil engineering (pipelines, \u2026 )": 19
+    }
+  }
+}

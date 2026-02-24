@@ -1,0 +1,758 @@
+{
+  "ranking": [
+    {
+      "Scenario": "S1: Baseline (Low BIM)",
+      "CC (Equal)": 0.0,
+      "Rank (Equal)": 6,
+      "CC (Entropy)": 0.0,
+      "Rank (Entropy)": 6,
+      "CC (AHP (CO\u2082 focus))": 0.0,
+      "Rank (AHP (CO\u2082 focus))": 6,
+      "CC (AHP (Circularity focus))": 0.0,
+      "Rank (AHP (Circularity focus))": 6
+    },
+    {
+      "Scenario": "S2: Design-Focused BIM",
+      "CC (Equal)": 0.4293,
+      "Rank (Equal)": 5,
+      "CC (Entropy)": 0.3967,
+      "Rank (Entropy)": 5,
+      "CC (AHP (CO\u2082 focus))": 0.402,
+      "Rank (AHP (CO\u2082 focus))": 5,
+      "CC (AHP (Circularity focus))": 0.4098,
+      "Rank (AHP (Circularity focus))": 5
+    },
+    {
+      "Scenario": "S3: Construction-Focused BIM",
+      "CC (Equal)": 0.4454,
+      "Rank (Equal)": 4,
+      "CC (Entropy)": 0.399,
+      "Rank (Entropy)": 4,
+      "CC (AHP (CO\u2082 focus))": 0.4663,
+      "Rank (AHP (CO\u2082 focus))": 4,
+      "CC (AHP (Circularity focus))": 0.3801,
+      "Rank (AHP (Circularity focus))": 2
+    },
+    {
+      "Scenario": "S4: End-of-Life Focused BIM",
+      "CC (Equal)": 0.4971,
+      "Rank (Equal)": 3,
+      "CC (Entropy)": 0.4681,
+      "Rank (Entropy)": 3,
+      "CC (AHP (CO\u2082 focus))": 0.5932,
+      "Rank (AHP (CO\u2082 focus))": 3,
+      "CC (AHP (Circularity focus))": 0.4022,
+      "Rank (AHP (Circularity focus))": 4
+    },
+    {
+      "Scenario": "S5: Full Lifecycle BIM",
+      "CC (Equal)": 0.9833,
+      "Rank (Equal)": 2,
+      "CC (Entropy)": 0.9858,
+      "Rank (Entropy)": 2,
+      "CC (AHP (CO\u2082 focus))": 0.9876,
+      "Rank (AHP (CO\u2082 focus))": 2,
+      "CC (AHP (Circularity focus))": 0.9836,
+      "Rank (AHP (Circularity focus))": 3
+    },
+    {
+      "Scenario": "S6: Maximum BIM Adoption",
+      "CC (Equal)": 0.9882,
+      "Rank (Equal)": 1,
+      "CC (Entropy)": 0.9917,
+      "Rank (Entropy)": 1,
+      "CC (AHP (CO\u2082 focus))": 0.9903,
+      "Rank (AHP (CO\u2082 focus))": 1,
+      "CC (AHP (Circularity focus))": 0.9906,
+      "Rank (AHP (Circularity focus))": 1
+    }
+  ],
+  "sensitivity": [
+    {
+      "criterion_varied": 0,
+      "delta": -0.2,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.2,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4404,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.2,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4692,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.2,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.5249,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.2,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9827,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.2,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.987,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.1,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.1,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4347,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.1,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4569,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.1,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.5104,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.1,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.983,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 0,
+      "delta": -0.1,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9876,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.0,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.0,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4293,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.0,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4454,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.0,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.4971,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.0,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9833,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.0,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9882,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.1,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.1,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4243,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.1,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4346,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.1,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.4849,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.1,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9836,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.1,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9887,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.2,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.2,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4196,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.2,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4246,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.2,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.4737,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.2,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9838,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 0,
+      "delta": 0.2,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9892,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.2,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.2,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4073,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.2,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4231,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.2,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.495,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.2,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9853,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.2,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9903,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.1,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.1,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4182,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.1,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4341,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.1,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.496,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.1,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9843,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 1,
+      "delta": -0.1,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9892,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.0,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.0,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4293,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.0,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4454,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.0,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.4971,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.0,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9833,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.0,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9882,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.1,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.1,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4407,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.1,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4568,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.1,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.4982,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.1,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9823,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.1,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9871,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.2,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.2,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4521,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.2,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4683,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.2,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.4994,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.2,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9814,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 1,
+      "delta": 0.2,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9861,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.2,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.2,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.442,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.2,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4458,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.2,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.4721,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.2,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9819,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.2,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9872,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.1,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.1,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4355,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.1,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4456,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.1,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.485,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.1,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9826,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 2,
+      "delta": -0.1,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9877,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.0,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.0,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4293,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.0,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4454,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.0,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.4971,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.0,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9833,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.0,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9882,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.1,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.1,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4234,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.1,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4452,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.1,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.5083,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.1,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.984,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.1,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9887,
+      "rank": 1
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.2,
+      "scenario": "S1: Baseline (Low BIM)",
+      "closeness_coeff": 0.0,
+      "rank": 6
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.2,
+      "scenario": "S2: Design-Focused BIM",
+      "closeness_coeff": 0.4179,
+      "rank": 5
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.2,
+      "scenario": "S3: Construction-Focused BIM",
+      "closeness_coeff": 0.4451,
+      "rank": 4
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.2,
+      "scenario": "S4: End-of-Life Focused BIM",
+      "closeness_coeff": 0.5187,
+      "rank": 3
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.2,
+      "scenario": "S5: Full Lifecycle BIM",
+      "closeness_coeff": 0.9847,
+      "rank": 2
+    },
+    {
+      "criterion_varied": 2,
+      "delta": 0.2,
+      "scenario": "S6: Maximum BIM Adoption",
+      "closeness_coeff": 0.9891,
+      "rank": 1
+    }
+  ],
+  "predictions": [
+    {
+      "scenario": "S1: Baseline (Low BIM)",
+      "sust_recycling_rate": 1,
+      "sust_recycling_rate_expected": 1.045,
+      "sust_waste_reduction": 1,
+      "sust_waste_reduction_expected": 2.095,
+      "sust_co2_reduction": 1,
+      "sust_co2_reduction_expected": 1.02
+    },
+    {
+      "scenario": "S2: Design-Focused BIM",
+      "sust_recycling_rate": 1,
+      "sust_recycling_rate_expected": 1.865,
+      "sust_waste_reduction": 3,
+      "sust_waste_reduction_expected": 3.53,
+      "sust_co2_reduction": 1,
+      "sust_co2_reduction_expected": 1.81
+    },
+    {
+      "scenario": "S3: Construction-Focused BIM",
+      "sust_recycling_rate": 1,
+      "sust_recycling_rate_expected": 1.72,
+      "sust_waste_reduction": 3,
+      "sust_waste_reduction_expected": 3.605,
+      "sust_co2_reduction": 1,
+      "sust_co2_reduction_expected": 2.03
+    },
+    {
+      "scenario": "S4: End-of-Life Focused BIM",
+      "sust_recycling_rate": 2,
+      "sust_recycling_rate_expected": 1.83,
+      "sust_waste_reduction": 3,
+      "sust_waste_reduction_expected": 2.93,
+      "sust_co2_reduction": 3,
+      "sust_co2_reduction_expected": 2.49
+    },
+    {
+      "scenario": "S5: Full Lifecycle BIM",
+      "sust_recycling_rate": 4,
+      "sust_recycling_rate_expected": 3.265,
+      "sust_waste_reduction": 3,
+      "sust_waste_reduction_expected": 3.54,
+      "sust_co2_reduction": 4,
+      "sust_co2_reduction_expected": 3.3
+    },
+    {
+      "scenario": "S6: Maximum BIM Adoption",
+      "sust_recycling_rate": 4,
+      "sust_recycling_rate_expected": 3.295,
+      "sust_waste_reduction": 3,
+      "sust_waste_reduction_expected": 3.55,
+      "sust_co2_reduction": 4,
+      "sust_co2_reduction_expected": 3.3
+    }
+  ]
+}

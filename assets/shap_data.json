@@ -1,0 +1,236 @@
+{
+  "sust_recycling_rate": [
+    {
+      "feature": "bim_maturity_index",
+      "importance": 0.06621
+    },
+    {
+      "feature": "bim_feasibility_study",
+      "importance": 0.05979
+    },
+    {
+      "feature": "company_x_bim_maturity",
+      "importance": 0.051273
+    },
+    {
+      "feature": "project_x_bim_eol",
+      "importance": 0.045752
+    },
+    {
+      "feature": "bim_energy_sustainability",
+      "importance": 0.044662
+    },
+    {
+      "feature": "bim_space_tracking",
+      "importance": 0.033886
+    },
+    {
+      "feature": "status_Investor",
+      "importance": 0.025657
+    },
+    {
+      "feature": "country_Slovenia",
+      "importance": 0.016198
+    },
+    {
+      "feature": "bim_recycling",
+      "importance": 0.015868
+    },
+    {
+      "feature": "countries_operated_in",
+      "importance": 0.013879
+    },
+    {
+      "feature": "company_size_ord",
+      "importance": 0.012576
+    },
+    {
+      "feature": "bim_construction_mgmt",
+      "importance": 0.012086
+    },
+    {
+      "feature": "bim_lifecycle_coverage",
+      "importance": 0.010855
+    },
+    {
+      "feature": "project_size_ord",
+      "importance": 0.00994
+    },
+    {
+      "feature": "country_Slovakia",
+      "importance": 0.009186
+    },
+    {
+      "feature": "bim_eol_focus",
+      "importance": 0.008462
+    },
+    {
+      "feature": "bim_demolition",
+      "importance": 0.00542
+    },
+    {
+      "feature": "status_Designer",
+      "importance": 0.000495
+    },
+    {
+      "feature": "foreign_participation_bin",
+      "importance": 0.000266
+    }
+  ],
+  "sust_waste_reduction": [
+    {
+      "feature": "bim_construction_mgmt",
+      "importance": 0.038596
+    },
+    {
+      "feature": "bim_demolition",
+      "importance": 0.037586
+    },
+    {
+      "feature": "bim_maturity_index",
+      "importance": 0.034952
+    },
+    {
+      "feature": "company_x_bim_maturity",
+      "importance": 0.031451
+    },
+    {
+      "feature": "project_size_ord",
+      "importance": 0.030923
+    },
+    {
+      "feature": "bim_energy_sustainability",
+      "importance": 0.030465
+    },
+    {
+      "feature": "company_size_ord",
+      "importance": 0.030399
+    },
+    {
+      "feature": "bim_eol_focus",
+      "importance": 0.028207
+    },
+    {
+      "feature": "bim_space_tracking",
+      "importance": 0.020188
+    },
+    {
+      "feature": "countries_operated_in",
+      "importance": 0.019426
+    },
+    {
+      "feature": "bim_lifecycle_coverage",
+      "importance": 0.01661
+    },
+    {
+      "feature": "project_x_bim_eol",
+      "importance": 0.015913
+    },
+    {
+      "feature": "foreign_participation_bin",
+      "importance": 0.014822
+    },
+    {
+      "feature": "status_Investor",
+      "importance": 0.014284
+    },
+    {
+      "feature": "country_Slovakia",
+      "importance": 0.013965
+    },
+    {
+      "feature": "bim_feasibility_study",
+      "importance": 0.005382
+    },
+    {
+      "feature": "bim_recycling",
+      "importance": 0.003818
+    },
+    {
+      "feature": "country_Slovenia",
+      "importance": 0.0
+    },
+    {
+      "feature": "status_Designer",
+      "importance": 0.0
+    }
+  ],
+  "sust_co2_reduction": [
+    {
+      "feature": "company_x_bim_maturity",
+      "importance": 0.060693
+    },
+    {
+      "feature": "bim_maturity_index",
+      "importance": 0.055069
+    },
+    {
+      "feature": "bim_energy_sustainability",
+      "importance": 0.054626
+    },
+    {
+      "feature": "project_x_bim_eol",
+      "importance": 0.051496
+    },
+    {
+      "feature": "countries_operated_in",
+      "importance": 0.045413
+    },
+    {
+      "feature": "bim_construction_mgmt",
+      "importance": 0.0435
+    },
+    {
+      "feature": "bim_space_tracking",
+      "importance": 0.020649
+    },
+    {
+      "feature": "status_Investor",
+      "importance": 0.020261
+    },
+    {
+      "feature": "bim_feasibility_study",
+      "importance": 0.018404
+    },
+    {
+      "feature": "bim_recycling",
+      "importance": 0.01268
+    },
+    {
+      "feature": "bim_lifecycle_coverage",
+      "importance": 0.011075
+    },
+    {
+      "feature": "project_size_ord",
+      "importance": 0.009569
+    },
+    {
+      "feature": "bim_eol_focus",
+      "importance": 0.008405
+    },
+    {
+      "feature": "country_Slovakia",
+      "importance": 0.008155
+    },
+    {
+      "feature": "bim_demolition",
+      "importance": 0.007527
+    },
+    {
+      "feature": "company_size_ord",
+      "importance": 0.006494
+    },
+    {
+      "feature": "country_Slovenia",
+      "importance": 0.002102
+    },
+    {
+      "feature": "status_Designer",
+      "importance": 0.000769
+    },
+    {
+      "feature": "foreign_participation_bin",
+      "importance": 0.000595
+    }
+  ]
+}

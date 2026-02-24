@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "Bash(where:*)",
+      "Bash(py:*)",
+      "Bash(conda:*)",
+      "Bash(uv:*)",
+      "Bash(powershell.exe -ExecutionPolicy ByPass -Command \"irm https://astral.sh/uv/install.ps1 | iex\")",
+      "Bash(export PATH=\"/c/Users/Matus/.local/bin:$PATH\")",
+      "Bash(PYTHONIOENCODING=utf-8 uv run python:*)",
+      "Bash(ls:*)",
+      "Bash(PYTHONIOENCODING=utf-8 uv add:*)"
+    ]
+  }
+}
