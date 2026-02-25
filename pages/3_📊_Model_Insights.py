@@ -23,6 +23,7 @@ from src.charts import create_heatmap, create_horizontal_bar
 
 st.set_page_config(page_title=f"{APP_TITLE} — Model Insights", page_icon="📊", layout="wide")
 
+st.markdown('<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">', unsafe_allow_html=True)
 if CSS_PATH.exists():
     st.markdown(f"<style>{CSS_PATH.read_text()}</style>", unsafe_allow_html=True)
 

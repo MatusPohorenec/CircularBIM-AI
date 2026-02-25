@@ -5,6 +5,7 @@ from src.st_config import APP_TITLE, APP_ICON, CSS_PATH, C_ACCENT, C_MUTED
 
 st.set_page_config(page_title=f"{APP_TITLE} — About", page_icon="📄", layout="wide")
 
+st.markdown('<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">', unsafe_allow_html=True)
 if CSS_PATH.exists():
     st.markdown(f"<style>{CSS_PATH.read_text()}</style>", unsafe_allow_html=True)
 

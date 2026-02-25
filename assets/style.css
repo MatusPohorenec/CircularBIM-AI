@@ -28,6 +28,12 @@ p, li, span, div, label, .stMarkdown {
     font-family: 'DM Sans', sans-serif !important;
 }
 
+/* Preserve Material Symbols icons (used by Streamlit sidebar toggle, etc.) */
+[data-testid="stIconMaterial"],
+.material-symbols-rounded {
+    font-family: 'Material Symbols Rounded' !important;
+}
+
 /* ── Glass-morphism metric cards ─────────────────────────────────── */
 .metric-card {
     background: rgba(26, 31, 46, 0.7);
@@ -237,9 +243,8 @@ p, li, span, div, label, .stMarkdown {
 }
 
 /* ── Hide default Streamlit elements ─────────────────────────────── */
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
+#MainMenu {display: none !important;}
+footer {display: none !important;}
 
 /* ── Expander styling ────────────────────────────────────────────── */
 .streamlit-expanderHeader {

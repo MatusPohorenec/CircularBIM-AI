@@ -12,6 +12,11 @@ st.set_page_config(
 )
 
 # ── Load CSS ──────────────────────────────────────────────────────────
+# Load Material Symbols font for sidebar toggle icon
+st.markdown(
+    '<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">',
+    unsafe_allow_html=True,
+)
 if CSS_PATH.exists():
     st.markdown(f"<style>{CSS_PATH.read_text()}</style>", unsafe_allow_html=True)
 
