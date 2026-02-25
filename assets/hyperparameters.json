@@ -1,0 +1,5817 @@
+{
+  "configs": [
+    {
+      "model": "Random Forest",
+      "params": "{\"bootstrap\": true, \"ccp_alpha\": 0.0, \"class_weight\": \"balanced\", \"criterion\": \"gini\", \"max_depth\": 5, \"max_features\": \"sqrt\", \"max_leaf_nodes\": null, \"max_samples\": null, \"min_impurity_decrease\": 0.0, \"min_samples_leaf\": 5, \"min_samples_split\": 2, \"min_weight_fraction_leaf\": 0.0, \"monotonic_cst\": null, \"n_estimators\": 200, \"oob_score\": false, \"warm_start\": false}"
+    },
+    {
+      "model": "XGBoost",
+      "params": "{\"objective\": \"binary:logistic\", \"base_score\": null, \"booster\": null, \"callbacks\": null, \"colsample_bylevel\": null, \"colsample_bynode\": null, \"colsample_bytree\": 0.8, \"device\": \"cuda\", \"early_stopping_rounds\": null, \"enable_categorical\": false, \"eval_metric\": \"mlogloss\", \"feature_types\": null, \"feature_weights\": null, \"gamma\": null, \"grow_policy\": null, \"importance_type\": null, \"interaction_constraints\": null, \"learning_rate\": 0.1, \"max_bin\": null, \"max_cat_threshold\": null, \"max_cat_to_onehot\": null, \"max_delta_step\": null, \"max_depth\": 3, \"max_leaves\": null, \"min_child_weight\": 5, \"missing\": NaN, \"monotone_constraints\": null, \"multi_strategy\": null, \"n_estimators\": 200, \"num_parallel_tree\": null, \"reg_alpha\": null, \"reg_lambda\": null, \"sampling_method\": null, \"scale_pos_weight\": null, \"subsample\": 0.8, \"tree_method\": \"hist\", \"validate_parameters\": null}"
+    },
+    {
+      "model": "LightGBM",
+      "params": "{\"boosting_type\": \"gbdt\", \"class_weight\": \"balanced\", \"colsample_bytree\": 0.8, \"importance_type\": \"split\", \"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 5, \"min_child_weight\": 0.001, \"min_split_gain\": 0.0, \"n_estimators\": 200, \"num_leaves\": 31, \"objective\": null, \"reg_alpha\": 0.0, \"reg_lambda\": 0.0, \"subsample\": 0.8, \"subsample_for_bin\": 200000, \"subsample_freq\": 0, \"device\": \"gpu\"}"
+    },
+    {
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 1.0, \"break_ties\": false, \"cache_size\": 200, \"class_weight\": \"balanced\", \"coef0\": 0.0, \"decision_function_shape\": \"ovr\", \"degree\": 3, \"gamma\": \"scale\", \"kernel\": \"rbf\", \"max_iter\": -1, \"probability\": true, \"shrinking\": true, \"tol\": 0.001}"
+    },
+    {
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 1.0, \"copy_X\": true, \"fit_intercept\": true, \"max_iter\": null, \"positive\": false, \"solver\": \"auto\", \"tol\": 0.0001}"
+    },
+    {
+      "model": "LAD (mord)",
+      "params": "{\"C\": 1.0, \"dual\": \"auto\", \"epsilon\": 0.0, \"fit_intercept\": true, \"intercept_scaling\": 1.0, \"loss\": \"epsilon_insensitive\", \"max_iter\": 1000, \"tol\": 0.0001}"
+    }
+  ],
+  "search_results": [
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 0.1, \"gamma\": \"scale\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 0.1, \"gamma\": \"auto\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 1.0, \"gamma\": \"scale\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 1.0, \"gamma\": \"auto\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 10.0, \"gamma\": \"scale\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 10.0, \"gamma\": \"auto\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 0.01}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 0.1}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 1.0}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 10.0}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 4,
+      "is_best": false
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LAD (mord)",
+      "params": "{\"C\": 0.1}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LAD (mord)",
+      "params": "{\"C\": 1.0}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_recycling_rate",
+      "model": "LAD (mord)",
+      "params": "{\"C\": 10.0}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.4444,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 0.1, \"gamma\": \"scale\"}",
+      "mean_score": 0.5556,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 0.1, \"gamma\": \"auto\"}",
+      "mean_score": 0.5556,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 1.0, \"gamma\": \"scale\"}",
+      "mean_score": 0.5556,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 1.0, \"gamma\": \"auto\"}",
+      "mean_score": 0.5556,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 10.0, \"gamma\": \"scale\"}",
+      "mean_score": 0.5556,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 10.0, \"gamma\": \"auto\"}",
+      "mean_score": 0.5556,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 0.01}",
+      "mean_score": 0.5556,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 0.1}",
+      "mean_score": 0.5556,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 1.0}",
+      "mean_score": 0.5556,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 10.0}",
+      "mean_score": 0.5556,
+      "std_score": 0.4969,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LAD (mord)",
+      "params": "{\"C\": 0.1}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LAD (mord)",
+      "params": "{\"C\": 1.0}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_waste_reduction",
+      "model": "LAD (mord)",
+      "params": "{\"C\": 10.0}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 3, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 5, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": 7, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Random Forest",
+      "params": "{\"max_depth\": null, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 3, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 5, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 100}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 200}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "XGBoost",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_weight\": 10, \"n_estimators\": 300}",
+      "mean_score": null,
+      "std_score": null,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.05, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.1, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 3, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 5, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 3, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 5, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 100}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 200}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LightGBM",
+      "params": "{\"learning_rate\": 0.2, \"max_depth\": 7, \"min_child_samples\": 10, \"n_estimators\": 300}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 0.1, \"gamma\": \"scale\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 0.1, \"gamma\": \"auto\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 1.0, \"gamma\": \"scale\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 1.0, \"gamma\": \"auto\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 10.0, \"gamma\": \"scale\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "SVM (RBF)",
+      "params": "{\"C\": 10.0, \"gamma\": \"auto\"}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 0.01}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 0.1}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 1.0}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "Ordinal Ridge (mord)",
+      "params": "{\"alpha\": 10.0}",
+      "mean_score": 0.6667,
+      "std_score": 0.4714,
+      "rank": 4,
+      "is_best": false
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LAD (mord)",
+      "params": "{\"C\": 0.1}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LAD (mord)",
+      "params": "{\"C\": 1.0}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    },
+    {
+      "target": "sust_co2_reduction",
+      "model": "LAD (mord)",
+      "params": "{\"C\": 10.0}",
+      "mean_score": 0.7778,
+      "std_score": 0.4157,
+      "rank": 1,
+      "is_best": true
+    }
+  ],
+  "grids": {
+    "Random Forest": {
+      "n_estimators": [
+        "100",
+        "200",
+        "300"
+      ],
+      "max_depth": [
+        "3",
+        "5",
+        "7",
+        "None"
+      ],
+      "min_samples_leaf": [
+        "3",
+        "5",
+        "10"
+      ]
+    },
+    "XGBoost": {
+      "n_estimators": [
+        "100",
+        "200",
+        "300"
+      ],
+      "max_depth": [
+        "3",
+        "5",
+        "7"
+      ],
+      "learning_rate": [
+        "0.05",
+        "0.1",
+        "0.2"
+      ],
+      "min_child_weight": [
+        "3",
+        "5",
+        "10"
+      ]
+    },
+    "LightGBM": {
+      "n_estimators": [
+        "100",
+        "200",
+        "300"
+      ],
+      "max_depth": [
+        "3",
+        "5",
+        "7"
+      ],
+      "learning_rate": [
+        "0.05",
+        "0.1",
+        "0.2"
+      ],
+      "min_child_samples": [
+        "3",
+        "5",
+        "10"
+      ]
+    },
+    "SVM (RBF)": {
+      "C": [
+        "0.1",
+        "1.0",
+        "10.0"
+      ],
+      "gamma": [
+        "scale",
+        "auto"
+      ]
+    },
+    "Ordinal Ridge (mord)": {
+      "alpha": [
+        "0.01",
+        "0.1",
+        "1.0",
+        "10.0"
+      ]
+    },
+    "LAD (mord)": {
+      "C": [
+        "0.1",
+        "1.0",
+        "10.0"
+      ]
+    }
+  }
+}

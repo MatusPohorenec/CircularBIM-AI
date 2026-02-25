@@ -19,7 +19,7 @@ from sklearn.metrics import (
     mean_absolute_error,
     roc_auc_score,
 )
-from sklearn.model_selection import RepeatedStratifiedKFold
+from sklearn.model_selection import GridSearchCV, LeaveOneGroupOut, StratifiedKFold
 from sklearn.preprocessing import LabelEncoder, OrdinalEncoder
 
 from src.config import (
@@ -27,8 +27,6 @@ from src.config import (
     CATEGORICAL_FEATURES,
     COLOR_PALETTE,
     COMPANY_SIZE_ORDER,
-    CV_FOLDS,
-    CV_REPEATS,
     FIGURE_DPI,
     FIGURES_DIR,
     FIGSIZE_LARGE,
@@ -122,40 +120,69 @@ def evaluate_model(
     return metrics
 
 
+def assign_groups(X: np.ndarray) -> np.ndarray:
+    """Assign group IDs based on unique feature-vector patterns.
+
+    With heavily duplicated survey data (e.g. 9 unique rows out of 199),
+    standard StratifiedKFold leaks identical rows into both train and test
+    folds, producing artificially perfect scores.  Grouping all copies of
+    the same pattern together prevents this leakage.
+    """
+    # Round to avoid floating-point noise
+    rounded = np.round(X, decimals=10)
+    # Convert each row to a hashable tuple, then factorize
+    row_keys = [tuple(row) for row in rounded]
+    _, groups = np.unique(row_keys, axis=0, return_inverse=True)
+    n_groups = len(np.unique(groups))
+    logger.info("Assigned %d unique groups from %d samples", n_groups, len(X))
+    return groups
+
+
 def cross_validate_model(
     model: Any,
     X: np.ndarray,
     y: np.ndarray,
     feature_names: list[str],
     model_name: str,
-    n_splits: int = CV_FOLDS,
-    n_repeats: int = CV_REPEATS,
+    groups: np.ndarray | None = None,
 ) -> dict:
-    """Run repeated stratified k-fold cross-validation."""
-    rskf = RepeatedStratifiedKFold(
-        n_splits=n_splits, n_repeats=n_repeats, random_state=RANDOM_SEED
-    )
+    """Run Leave-One-Group-Out cross-validation.
+
+    Each 'group' contains all duplicate copies of a unique feature pattern.
+    This ensures the model is always tested on a pattern it has never seen
+    during training, giving honest generalisation estimates.
+    """
+    if groups is None:
+        groups = assign_groups(X)
+
+    logo = LeaveOneGroupOut()
     classes = np.sort(np.unique(y))
 
-    # For XGBoost: remap labels to 0-indexed
+    # For XGBoost: remap labels to 0-indexed using ALL classes
     import xgboost as xgb
     needs_remap = isinstance(model, xgb.XGBClassifier)
-    if needs_remap:
-        label_map = {c: i for i, c in enumerate(classes)}
-        inv_label_map = {i: c for c, i in label_map.items()}
 
     fold_metrics = []
-    for fold_idx, (train_idx, test_idx) in enumerate(rskf.split(X, y)):
+    for fold_idx, (train_idx, test_idx) in enumerate(logo.split(X, y, groups)):
         X_train, X_test = X[train_idx], X[test_idx]
         y_train, y_test = y[train_idx], y[test_idx]
 
         try:
             model_clone = _clone_model(model)
             if needs_remap:
-                y_train_fit = np.array([label_map[v] for v in y_train])
+                # Build per-fold contiguous label map from training classes
+                train_classes = np.sort(np.unique(y_train))
+                fold_label_map = {c: i for i, c in enumerate(train_classes)}
+                fold_inv_map = {i: c for c, i in fold_label_map.items()}
+                y_train_fit = np.array([fold_label_map[v] for v in y_train])
+                if len(train_classes) > 2:
+                    model_clone.set_params(num_class=len(train_classes))
                 model_clone.fit(X_train, y_train_fit)
                 y_pred_raw = model_clone.predict(X_test)
-                y_pred = np.array([inv_label_map[v] for v in y_pred_raw])
+                y_pred = np.array([
+                    fold_inv_map.get(int(v), train_classes[min(int(v), len(train_classes) - 1)])
+                    for v in y_pred_raw
+                ])
             else:
                 model_clone.fit(X_train, y_train)
                 y_pred = model_clone.predict(X_test)
@@ -179,6 +206,7 @@ def cross_validate_model(
     if not fold_metrics:
         return {"error": "All folds failed"}
 
+    n_groups = len(np.unique(groups))
     # Aggregate metrics
     metric_names = fold_metrics[0].keys()
     agg = {}
@@ -187,13 +215,22 @@ def cross_validate_model(
         if values:
             agg[f"{m}_mean"] = np.mean(values)
             agg[f"{m}_std"] = np.std(values)
-            agg[f"{m}_ci_low"] = np.percentile(values, 2.5)
-            agg[f"{m}_ci_high"] = np.percentile(values, 97.5)
+            if len(values) >= 4:
+                agg[f"{m}_ci_low"] = np.percentile(values, 2.5)
+                agg[f"{m}_ci_high"] = np.percentile(values, 97.5)
+            else:
+                agg[f"{m}_ci_low"] = np.nan
+                agg[f"{m}_ci_high"] = np.nan
         else:
             agg[f"{m}_mean"] = np.nan
             agg[f"{m}_std"] = np.nan
+            agg[f"{m}_ci_low"] = np.nan
+            agg[f"{m}_ci_high"] = np.nan
 
     agg["n_folds_completed"] = len(fold_metrics)
+    agg["n_groups"] = n_groups
+    agg["cv_strategy"] = "LeaveOneGroupOut"
+    agg["_fold_metrics"] = fold_metrics  # raw per-fold data
     return agg
 
 
@@ -205,6 +242,114 @@ def _clone_model(model: Any) -> Any:
     except Exception:
         # Fallback: re-instantiate
         return model.__class__(**model.get_params())
+
+
+def get_hyperparameter_grids() -> dict[str, dict]:
+    """Define hyperparameter search spaces for each model."""
+    return {
+        "Random Forest": {
+            "n_estimators": [100, 200, 300],
+            "max_depth": [3, 5, 7, None],
+            "min_samples_leaf": [3, 5, 10],
+        },
+        "XGBoost": {
+            "n_estimators": [100, 200, 300],
+            "max_depth": [3, 5, 7],
+            "learning_rate": [0.05, 0.1, 0.2],
+            "min_child_weight": [3, 5, 10],
+        },
+        "LightGBM": {
+            "n_estimators": [100, 200, 300],
+            "max_depth": [3, 5, 7],
+            "learning_rate": [0.05, 0.1, 0.2],
+            "min_child_samples": [3, 5, 10],
+        },
+        "SVM (RBF)": {
+            "C": [0.1, 1.0, 10.0],
+            "gamma": ["scale", "auto"],
+        },
+        "Ordinal Ridge (mord)": {
+            "alpha": [0.01, 0.1, 1.0, 10.0],
+        },
+        "LAD (mord)": {
+            "C": [0.1, 1.0, 10.0],
+        },
+    }
+
+
+def run_hyperparameter_search(
+    models: dict[str, Any],
+    X: np.ndarray,
+    y: np.ndarray,
+    target: str,
+    groups: np.ndarray | None = None,
+) -> list[dict]:
+    """Run GridSearchCV for each model and return search results."""
+    import json as _json
+    grids = get_hyperparameter_grids()
+
+    # Use LeaveOneGroupOut for grid search to avoid duplicate-row leakage
+    if groups is None:
+        groups = assign_groups(X)
+    inner_cv = LeaveOneGroupOut()
+
+    search_results = []
+
+    import xgboost as xgb
+    for model_name, model in models.items():
+        grid = grids.get(model_name)
+        if grid is None:
+            continue
+
+        logger.info("    GridSearchCV for %s (%d configs)", model_name,
+                     int(np.prod([len(v) for v in grid.values()])))
+
+        needs_remap = isinstance(model, xgb.XGBClassifier)
+        classes = np.sort(np.unique(y))
+        if needs_remap:
+            label_map = {c: i for i, c in enumerate(classes)}
+            y_search = np.array([label_map[v] for v in y])
+        else:
+            y_search = y
+
+        try:
+            # XGBoost + joblib parallelism crashes on Windows; use n_jobs=1
+            import lightgbm as lgb
+            use_serial = isinstance(model, (xgb.XGBClassifier, lgb.LGBMClassifier))
+            model_for_gs = _clone_model(model)
+            if needs_remap:
+                model_for_gs.set_params(num_class=len(classes))
+            gs = GridSearchCV(
+                model_for_gs,
+                grid,
+                cv=inner_cv,
+                scoring="f1_macro",
+                n_jobs=1 if use_serial else -1,
+                refit=False,
+            )
+            gs.fit(X, y_search, groups=groups)
+
+            best_params = gs.best_params_
+            best_score = gs.best_score_
+
+            # Record all tested configs
+            for i in range(len(gs.cv_results_["params"])):
+                row = {
+                    "target": target,
+                    "model": model_name,
+                    "params": _json.dumps(gs.cv_results_["params"][i], default=str),
+                    "mean_score": float(gs.cv_results_["mean_test_score"][i]),
+                    "std_score": float(gs.cv_results_["std_test_score"][i]),
+                    "rank": int(gs.cv_results_["rank_test_score"][i]),
+                    "is_best": bool(gs.cv_results_["rank_test_score"][i] == 1),
+                }
+                search_results.append(row)
+
+            logger.info("    Best: score=%.4f params=%s", best_score, best_params)
+        except Exception as e:
+            logger.warning("    GridSearchCV failed for %s: %s", model_name, e)
+
+    return search_results
 
 
 def build_models() -> dict[str, Any]:
@@ -232,6 +377,8 @@ def build_models() -> dict[str, Any]:
             random_state=RANDOM_SEED,
             eval_metric="mlogloss",
             verbosity=0,
+            device="cuda",
+            tree_method="hist",
         ),
         "LightGBM": lgb.LGBMClassifier(
             n_estimators=200,
@@ -243,6 +390,7 @@ def build_models() -> dict[str, Any]:
             class_weight="balanced",
             random_state=RANDOM_SEED,
             verbose=-1,
+            device="gpu",
         ),
         "SVM (RBF)": SVC(
             kernel="rbf",
@@ -287,17 +435,27 @@ def compute_baseline_metrics(y: np.ndarray) -> dict:
 
 def run_model_comparison(df: pd.DataFrame) -> dict:
     """Run all models on all targets with cross-validation."""
+    import json as _json
     logger.info("Running model comparison across all targets")
 
     feature_cols = get_feature_columns(df)
     models = build_models()
 
     all_results = []
+    all_fold_results = []
+    all_search_results = []
+    hyperparam_configs = []
+
     for target in TARGET_COLS:
         logger.info("--- Target: %s ---", target)
 
         X = df[feature_cols].astype(float).values
         y = df[target].astype(int).values
+
+        # Assign groups to prevent duplicate-row leakage in CV
+        groups = assign_groups(X)
+        n_groups = len(np.unique(groups))
+        logger.info("  %d unique feature patterns (groups) for LOGO-CV", n_groups)
 
         # Baseline
         baselines = compute_baseline_metrics(y)
@@ -308,12 +466,25 @@ def run_model_comparison(df: pd.DataFrame) -> dict:
                 row[f"{k}_std"] = 0.0
             all_results.append(row)
 
-        # Models
+        # Hyperparameter search
+        logger.info("  Running hyperparameter grid search...")
+        search_results = run_hyperparameter_search(models, X, y, target, groups)
+        all_search_results.extend(search_results)
+
+        # Models with CV
         for model_name, model in models.items():
             logger.info("  Model: %s", model_name)
             cv_result = cross_validate_model(
-                model, X, y, feature_cols, model_name
+                model, X, y, feature_cols, model_name, groups
             )
+
+            # Extract per-fold data before removing from aggregate
+            fold_metrics = cv_result.pop("_fold_metrics", [])
+            for fold_idx, fm in enumerate(fold_metrics):
+                fold_row = {"target": target, "model": model_name, "fold": fold_idx}
+                fold_row.update(fm)
+                all_fold_results.append(fold_row)
+
             row = {"target": target, "model": model_name}
             row.update(cv_result)
             all_results.append(row)
@@ -323,9 +494,44 @@ def run_model_comparison(df: pd.DataFrame) -> dict:
                         cv_result.get("cohen_kappa_qw_mean", 0),
                         cv_result.get("cohen_kappa_qw_std", 0))
 
+            # Record hyperparameter config
+            try:
+                params = model.get_params()
+                # Filter to non-default interesting params
+                skip_keys = {"random_state", "n_jobs", "verbose", "verbosity"}
+                filtered = {k: v for k, v in params.items() if k not in skip_keys}
+                hyperparam_configs.append({
+                    "model": model_name,
+                    "params": _json.dumps(filtered, default=str),
+                })
+            except Exception:
+                pass
+
     results_df = pd.DataFrame(all_results)
     results_df.to_csv(TABLES_DIR / "model_comparison.csv", index=False, float_format="%.4f")
     logger.info("Saved model comparison table")
+
+    # Save per-fold results
+    fold_df = pd.DataFrame(all_fold_results)
+    fold_df.to_csv(TABLES_DIR / "cv_fold_results.csv", index=False, float_format="%.4f")
+    logger.info("Saved per-fold CV results (%d rows)", len(fold_df))
+
+    # Save hyperparameter search results
+    search_df = pd.DataFrame(all_search_results)
+    search_df.to_csv(TABLES_DIR / "hyperparameter_search.csv", index=False, float_format="%.4f")
+    logger.info("Saved hyperparameter search results (%d rows)", len(search_df))
+
+    # Save hyperparameter configs (deduplicate)
+    seen = set()
+    unique_configs = []
+    for cfg in hyperparam_configs:
+        key = cfg["model"]
+        if key not in seen:
+            seen.add(key)
+            unique_configs.append(cfg)
+    config_df = pd.DataFrame(unique_configs)
+    config_df.to_csv(TABLES_DIR / "hyperparameter_configs.csv", index=False)
+    logger.info("Saved hyperparameter configs")
 
     return {"results_df": results_df, "feature_cols": feature_cols}
 

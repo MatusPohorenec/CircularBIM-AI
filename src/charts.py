@@ -176,6 +176,147 @@ def create_bar_chart(
     return fig
 
 
+def create_grouped_bar(
+    data: dict[str, list[float]],
+    categories: list[str],
+    title: str = "",
+    height: int = 400,
+    ci_low: dict[str, list[float]] | None = None,
+    ci_high: dict[str, list[float]] | None = None,
+) -> go.Figure:
+    """Grouped bar chart for model comparison across metrics.
+
+    Parameters
+    ----------
+    ci_low, ci_high : optional dicts keyed by model name with lists of
+        lower/upper 95 % CI bounds. When supplied, error bars are drawn.
+    """
+    fig = go.Figure()
+    for i, (name, values) in enumerate(data.items()):
+        error_y = None
+        if ci_low and ci_high and name in ci_low and name in ci_high:
+            error_y = dict(
+                type="data",
+                symmetric=False,
+                array=[h - v for v, h in zip(values, ci_high[name])],
+                arrayminus=[v - lo for v, lo in zip(values, ci_low[name])],
+                color="rgba(255,255,255,0.35)",
+                thickness=1.5,
+                width=4,
+            )
+        fig.add_trace(go.Bar(
+            name=name,
+            x=categories,
+            y=values,
+            marker_color=COLORWAY[i % len(COLORWAY)],
+            error_y=error_y,
+            hovertemplate=f"{name}<br>%{{x}}: %{{y:.4f}}<extra></extra>",
+        ))
+    layout = {k: v for k, v in PLOTLY_LAYOUT.items() if k not in ('yaxis',)}
+    fig.update_layout(
+        **layout,
+        barmode="group",
+        height=height,
+        legend=dict(
+            orientation="h",
+            yanchor="bottom", y=1.02,
+            xanchor="center", x=0.5,
+            font=dict(size=11),
+            bgcolor="rgba(0,0,0,0)",
+        ),
+        yaxis=dict(
+            range=[0, 1.05],
+            gridcolor="rgba(255,255,255,0.05)",
+            dtick=0.2,
+        ),
+    )
+    if title:
+        fig.update_layout(title=dict(text=title, font=dict(size=14)))
+    return fig
+
+
+def create_cv_strip_plot(
+    cv_df,
+    metric: str = "macro_f1",
+    height: int = 380,
+) -> go.Figure:
+    """Strip plot (jittered dot plot) of per-fold metric values by model.
+
+    Parameters
+    ----------
+    cv_df : DataFrame with columns 'model', 'fold', and the chosen metric.
+    """
+    import pandas as _pd
+    models = cv_df["model"].unique().tolist()
+    fig = go.Figure()
+    for i, model in enumerate(models):
+        subset = cv_df[cv_df["model"] == model]
+        vals = subset[metric].values
+        fig.add_trace(go.Box(
+            y=vals,
+            name=model,
+            boxpoints="all",
+            jitter=0.45,
+            pointpos=0,
+            marker=dict(
+                color=COLORWAY[i % len(COLORWAY)],
+                size=6,
+                opacity=0.8,
+            ),
+            line=dict(color=COLORWAY[i % len(COLORWAY)]),
+            fillcolor="rgba(0,0,0,0)",
+            hovertemplate=f"{model}<br>{metric}: %{{y:.4f}}<extra></extra>",
+        ))
+    layout = {k: v for k, v in PLOTLY_LAYOUT.items() if k not in ('xaxis', 'yaxis')}
+    fig.update_layout(
+        **layout,
+        height=height,
+        showlegend=False,
+        yaxis=dict(
+            title=metric.replace("_", " ").title(),
+            gridcolor="rgba(255,255,255,0.05)",
+        ),
+        xaxis=dict(
+            tickfont=dict(size=10),
+        ),
+    )
+    return fig
+
+
+def create_model_heatmap(
+    models: list[str],
+    metrics: list[str],
+    values: list[list[float]],
+    height: int = 350,
+) -> go.Figure:
+    """Heatmap of models (rows) x metrics (cols)."""
+    text = [[f"{v:.4f}" if v is not None else "\u2014" for v in row] for row in values]
+    fig = go.Figure(go.Heatmap(
+        z=values,
+        x=metrics,
+        y=models,
+        text=text,
+        texttemplate="%{text}",
+        textfont=dict(size=12),
+        colorscale=[
+            [0, "rgba(255,107,107,0.3)"],
+            [0.5, "rgba(255,184,77,0.3)"],
+            [1.0, "rgba(0,212,170,0.6)"],
+        ],
+        zmin=0, zmax=1,
+        hovertemplate="Model: %{y}<br>Metric: %{x}<br>Value: %{z:.4f}<extra></extra>",
+        colorbar=dict(tickfont=dict(color=C_MUTED), len=0.8),
+    ))
+    layout = {k: v for k, v in PLOTLY_LAYOUT.items() if k not in ('xaxis', 'yaxis')}
+    fig.update_layout(
+        **layout,
+        height=max(height, len(models) * 40 + 80),
+        xaxis=dict(tickfont=dict(size=11), side="top"),
+        yaxis=dict(tickfont=dict(size=11), autorange="reversed"),
+    )
+    return fig
+
+
 def _hex_to_rgb(hex_color: str) -> str:
     """Convert hex to comma-separated RGB string."""
     h = hex_color.lstrip("#")

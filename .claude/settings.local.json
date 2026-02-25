@@ -12,7 +12,8 @@
       "Bash(PYTHONIOENCODING=utf-8 uv run python:*)",
       "Bash(ls:*)",
       "Bash(PYTHONIOENCODING=utf-8 uv add:*)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(export PYTHONIOENCODING=utf-8)"
     ]
   }
 }

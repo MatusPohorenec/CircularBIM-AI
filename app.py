@@ -78,7 +78,7 @@ if model_path.exists():
 cols = st.columns(3)
 kpi_data = [
     (str(n_obs), "Observations Analysed", "3 countries"),
-    (best_f1, "Best Macro-F1 Score", "Random Forest"),
+    (best_f1, "Best Macro-F1 Score", "All 6 models"),
     (str(n_phases), "BIM Lifecycle Phases", "Full coverage"),
 ]
 

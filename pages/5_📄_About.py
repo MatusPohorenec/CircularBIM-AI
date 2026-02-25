@@ -153,8 +153,9 @@ st.markdown(
 | Component | Detail |
 |:---|:---|
 | **Feature Engineering** | BIM maturity index, lifecycle coverage, EOL focus, interaction terms, one-hot country/status |
-| **Best Model** | Random Forest (n_estimators=200, max_depth=5, balanced class weights) |
-| **Validation** | 5×5 Repeated Stratified K-Fold CV |
+| **ML Models** | Random Forest, XGBoost (GPU), LightGBM (GPU), SVM (RBF), Ordinal Ridge, LAD |
+| **Hyperparameter Tuning** | Inner GridSearchCV (5-fold) per model per target |
+| **Validation** | 5×5 Repeated Stratified K-Fold CV (25 folds) |
 | **Interpretability** | SHAP TreeExplainer — mean |SHAP| per feature |
 | **MCDM** | TOPSIS with vector normalisation; 4 weighting schemes |
 """

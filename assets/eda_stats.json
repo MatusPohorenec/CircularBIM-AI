@@ -131,8 +131,8 @@
     },
     "main_construction_activity": {
       "41.20.2_NonResidential": 80,
-      "41.20.1_Residential": 40,
       "Residental buildning": 40,
+      "41.20.1_Residential": 40,
       "42.11_Roads": 20,
       "42.21_Pipelines": 19
     },

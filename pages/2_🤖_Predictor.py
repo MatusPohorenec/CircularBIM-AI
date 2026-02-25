@@ -17,7 +17,7 @@ from src.st_config import (
     C_WARN,
 )
 from src.charts import create_gauge, create_proba_bar
-from src.model import build_feature_vector, predict_all, load_model
+from src.model import build_feature_vector, predict_all, load_model, MODEL_TYPES, MODEL_TYPE_LABELS, list_available_models
 
 st.set_page_config(page_title=f"{APP_TITLE} — Predictor", page_icon="🤖", layout="wide")
 
@@ -109,6 +109,16 @@ with col_input:
 
     st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
+    # Model selection
+    st.markdown("### Model Selection")
+    available = list_available_models()
+    model_options = {v: k for k, v in MODEL_TYPES.items() if v in available} if available else {"rf": "Random Forest"}
+    model_display = list(model_options.values())
+    selected_model_label = st.selectbox("Classifier", model_display, index=0)
+    selected_model_type = {v: k for k, v in model_options.items()}[selected_model_label]
+
+    st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+
     # Predict button
     predict_clicked = st.button("🔮 Predict Sustainability Impact", use_container_width=True, type="primary")
 
@@ -132,8 +142,9 @@ with col_result:
                 countries_operated_in=countries_operated_in,
             )
 
-            results = predict_all(feature_df)
+            results = predict_all(feature_df, model_type=selected_model_type)
             st.session_state["_last_prediction"] = results
+            st.session_state["_last_model_type"] = selected_model_type
         except Exception as e:
             st.error(f"Prediction failed: {e}")
             results = st.session_state.get("_last_prediction")
@@ -214,10 +225,15 @@ with col_result:
 
 
 # ── Footer ────────────────────────────────────────────────────────────
+active_model = MODEL_TYPE_LABELS.get(
+    st.session_state.get("_last_model_type", selected_model_type),
+    "Random Forest",
+)
 st.markdown(
     '<div class="footer">'
-    "<p>Predictions are based on Random Forest models trained on survey data from 199 respondents "
-    "across Slovakia, Croatia, and Slovenia. Results reflect perceived BIM impacts.</p>"
+    f"<p>Predictions are based on <strong>{active_model}</strong> models trained on survey data "
+    "from 199 respondents across Slovakia, Croatia, and Slovenia. Results reflect perceived BIM impacts. "
+    "Available models: Random Forest, XGBoost, LightGBM, SVM (RBF).</p>"
     "</div>",
     unsafe_allow_html=True,
 )

@@ -102,8 +102,11 @@ def engineer_features_for_export(df: pd.DataFrame) -> tuple[pd.DataFrame, list[s
 
 
 def train_and_export_models(df: pd.DataFrame, feature_cols: list[str]) -> None:
-    """Train final RF models and export."""
-    from src.predictive_modelling import engineer_features, get_feature_columns
+    """Train final models for all model types and export."""
+    from sklearn.svm import SVC
+    import xgboost as xgb
+    import lightgbm as lgb
+
     df_eng, feat_cols = engineer_features_for_export(df)
 
     target_names = {
@@ -112,18 +115,56 @@ def train_and_export_models(df: pd.DataFrame, feature_cols: list[str]) -> None:
         "sust_co2_reduction": "co2",
     }
 
+    model_defs = {
+        "rf": lambda: RandomForestClassifier(
+            n_estimators=200, max_depth=5, min_samples_leaf=5,
+            class_weight="balanced", random_state=RANDOM_SEED, n_jobs=-1,
+        ),
+        "xgb": lambda: xgb.XGBClassifier(
+            n_estimators=200, max_depth=3, learning_rate=0.1,
+            min_child_weight=5, subsample=0.8, colsample_bytree=0.8,
+            random_state=RANDOM_SEED, eval_metric="mlogloss", verbosity=0,
+            device="cuda", tree_method="hist",
+        ),
+        "lgb": lambda: lgb.LGBMClassifier(
+            n_estimators=200, max_depth=3, learning_rate=0.1,
+            min_child_samples=5, subsample=0.8, colsample_bytree=0.8,
+            class_weight="balanced", random_state=RANDOM_SEED, verbose=-1,
+            device="gpu",
+        ),
+        "svm": lambda: SVC(
+            kernel="rbf", C=1.0, gamma="scale", class_weight="balanced",
+            probability=True, random_state=RANDOM_SEED,
+        ),
+    }
+
     for target, short_name in target_names.items():
         X = df_eng[feat_cols].astype(float).values
         y = df_eng[target].astype(int).values
 
-        model = RandomForestClassifier(
-            n_estimators=200, max_depth=5, min_samples_leaf=5,
-            class_weight="balanced", random_state=RANDOM_SEED, n_jobs=-1,
-        )
-        model.fit(X, y)
-        model_path = MODELS_DIR / f"model_{short_name}.joblib"
-        joblib.dump(model, model_path)
-        logger.info("Exported %s → %s (classes=%s)", target, model_path, model.classes_)
+        for model_type, model_factory in model_defs.items():
+            model = model_factory()
+
+            # XGBoost needs 0-indexed labels
+            if model_type == "xgb":
+                classes = np.sort(np.unique(y))
+                label_map = {c: i for i, c in enumerate(classes)}
+                y_fit = np.array([label_map[v] for v in y])
+                model.fit(X, y_fit)
+                # Store original classes for inverse mapping
+                model._original_classes = classes
+            else:
+                model.fit(X, y)
+
+            # Save with model type suffix (and keep backward-compat RF alias)
+            model_path = MODELS_DIR / f"model_{short_name}_{model_type}.joblib"
+            joblib.dump(model, model_path)
+            logger.info("Exported %s/%s -> %s", target, model_type, model_path)
+
+            # Backward compatibility: also save RF as the default model
+            if model_type == "rf":
+                compat_path = MODELS_DIR / f"model_{short_name}.joblib"
+                joblib.dump(model, compat_path)
 
     # Save feature columns list
     joblib.dump(feat_cols, MODELS_DIR / "feature_columns.joblib")
@@ -265,6 +306,55 @@ def precompute_model_results() -> None:
         logger.warning("model_comparison.csv not found; skipping")
 
 
+def precompute_hyperparameter_data() -> None:
+    """Export hyperparameter configs and grid search results to assets."""
+    # Hyperparameter configs
+    config_path = PROJECT_ROOT / "results" / "tables" / "hyperparameter_configs.csv"
+    search_path = PROJECT_ROOT / "results" / "tables" / "hyperparameter_search.csv"
+
+    hp_data = {"configs": [], "search_results": [], "grids": {}}
+
+    if config_path.exists():
+        df = pd.read_csv(config_path)
+        hp_data["configs"] = df.to_dict(orient="records")
+
+    if search_path.exists():
+        df = pd.read_csv(search_path)
+        records = df.to_dict(orient="records")
+        for r in records:
+            for k, v in r.items():
+                if isinstance(v, float) and np.isnan(v):
+                    r[k] = None
+        hp_data["search_results"] = records
+
+    # Include the grid definitions
+    from src.predictive_modelling import get_hyperparameter_grids
+    grids = get_hyperparameter_grids()
+    hp_data["grids"] = {k: {pk: [str(x) for x in pv] for pk, pv in v.items()}
+                        for k, v in grids.items()}
+
+    with open(ASSETS_DIR / "hyperparameters.json", "w") as f:
+        json.dump(hp_data, f, indent=2, default=str)
+    logger.info("Exported hyperparameters.json")
+
+
+def precompute_cv_details() -> None:
+    """Export per-fold CV results to assets."""
+    fold_path = PROJECT_ROOT / "results" / "tables" / "cv_fold_results.csv"
+    if fold_path.exists():
+        df = pd.read_csv(fold_path)
+        records = df.to_dict(orient="records")
+        for r in records:
+            for k, v in r.items():
+                if isinstance(v, float) and np.isnan(v):
+                    r[k] = None
+        with open(ASSETS_DIR / "cv_details.json", "w") as f:
+            json.dump(records, f, indent=2)
+        logger.info("Exported cv_details.json (%d fold records)", len(records))
+    else:
+        logger.warning("cv_fold_results.csv not found; skipping")
+
+
 def precompute_mcdm_results() -> None:
     """Copy MCDM results to assets."""
     ranking_path = PROJECT_ROOT / "results" / "tables" / "mcdm_ranking.csv"
@@ -339,6 +429,8 @@ def main() -> None:
     precompute_bim_heatmap(df)
     precompute_shap_data(df)
     precompute_model_results()
+    precompute_hyperparameter_data()
+    precompute_cv_details()
     precompute_mcdm_results()
     precompute_reliability()
     precompute_sem_results()

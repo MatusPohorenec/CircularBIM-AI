@@ -1,0 +1,1622 @@
+[
+  {
+    "target": "sust_recycling_rate",
+    "model": "Random Forest",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Random Forest",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Random Forest",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Random Forest",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Random Forest",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Random Forest",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Random Forest",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Random Forest",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Random Forest",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "XGBoost",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "XGBoost",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "XGBoost",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "XGBoost",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "XGBoost",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "XGBoost",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "XGBoost",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "XGBoost",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "XGBoost",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LightGBM",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LightGBM",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LightGBM",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LightGBM",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LightGBM",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LightGBM",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LightGBM",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LightGBM",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LightGBM",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "SVM (RBF)",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "SVM (RBF)",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "SVM (RBF)",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "SVM (RBF)",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "SVM (RBF)",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "SVM (RBF)",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "SVM (RBF)",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "SVM (RBF)",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "SVM (RBF)",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 7,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LAD (mord)",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LAD (mord)",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LAD (mord)",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LAD (mord)",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LAD (mord)",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LAD (mord)",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LAD (mord)",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LAD (mord)",
+    "fold": 7,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_recycling_rate",
+    "model": "LAD (mord)",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Random Forest",
+    "fold": 0,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Random Forest",
+    "fold": 1,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Random Forest",
+    "fold": 2,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Random Forest",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Random Forest",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Random Forest",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Random Forest",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Random Forest",
+    "fold": 7,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Random Forest",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "XGBoost",
+    "fold": 0,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "XGBoost",
+    "fold": 1,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 3.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "XGBoost",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "XGBoost",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "XGBoost",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "XGBoost",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "XGBoost",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "XGBoost",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "XGBoost",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LightGBM",
+    "fold": 0,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LightGBM",
+    "fold": 1,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LightGBM",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LightGBM",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LightGBM",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LightGBM",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LightGBM",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LightGBM",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LightGBM",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "SVM (RBF)",
+    "fold": 0,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "SVM (RBF)",
+    "fold": 1,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "SVM (RBF)",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "SVM (RBF)",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "SVM (RBF)",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "SVM (RBF)",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "SVM (RBF)",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "SVM (RBF)",
+    "fold": 7,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "SVM (RBF)",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 0,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 1,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 2,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LAD (mord)",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LAD (mord)",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LAD (mord)",
+    "fold": 2,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LAD (mord)",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LAD (mord)",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LAD (mord)",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LAD (mord)",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LAD (mord)",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_waste_reduction",
+    "model": "LAD (mord)",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Random Forest",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Random Forest",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Random Forest",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Random Forest",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Random Forest",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Random Forest",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Random Forest",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Random Forest",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Random Forest",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "XGBoost",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "XGBoost",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "XGBoost",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "XGBoost",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "XGBoost",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "XGBoost",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "XGBoost",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "XGBoost",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "XGBoost",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LightGBM",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LightGBM",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LightGBM",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LightGBM",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LightGBM",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LightGBM",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LightGBM",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LightGBM",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LightGBM",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "SVM (RBF)",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "SVM (RBF)",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "SVM (RBF)",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "SVM (RBF)",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "SVM (RBF)",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "SVM (RBF)",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "SVM (RBF)",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "SVM (RBF)",
+    "fold": 7,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "SVM (RBF)",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 2.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 7,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "Ordinal Ridge (mord)",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LAD (mord)",
+    "fold": 0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LAD (mord)",
+    "fold": 1,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LAD (mord)",
+    "fold": 2,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LAD (mord)",
+    "fold": 3,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LAD (mord)",
+    "fold": 4,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LAD (mord)",
+    "fold": 5,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LAD (mord)",
+    "fold": 6,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LAD (mord)",
+    "fold": 7,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa_qw": null,
+    "mae": 0.0,
+    "auc_roc_ovr": null
+  },
+  {
+    "target": "sust_co2_reduction",
+    "model": "LAD (mord)",
+    "fold": 8,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "cohen_kappa_qw": 0.0,
+    "mae": 1.0,
+    "auc_roc_ovr": null
+  }
+]
