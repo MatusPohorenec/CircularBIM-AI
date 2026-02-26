@@ -237,7 +237,16 @@ for i, cat_key in enumerate(show_cats):
             data = cat_data[cat_key]
             labels = list(data.keys())
             values = list(data.values())
-            fig = create_bar_chart(x=labels, y=values, color=C_INFO, height=250)
+
+            # Show percentages for all categories except project_size
+            if cat_key != "project_size":
+                total = sum(values)
+                pct_values = [round(v / total * 100, 1) if total else 0 for v in values]
+                fig = create_bar_chart(x=labels, y=pct_values, color=C_INFO, height=250)
+                fig.update_layout(yaxis_title="%", yaxis_ticksuffix=" %")
+            else:
+                fig = create_bar_chart(x=labels, y=values, color=C_INFO, height=250)
+
             st.plotly_chart(fig, width="stretch", key=f"cat_{cat_key}")
 
 
